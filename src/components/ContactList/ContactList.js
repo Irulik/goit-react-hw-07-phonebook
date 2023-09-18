@@ -16,9 +16,9 @@ export const ContactList = () => {
   const contacts = useSelector(selectContacts);
   const filter = useSelector(selectFilter);
 
-  const handleDelete = id => {
-    dispatch(deleteContactThunk(id));
-  };
+  // const handleDelete = id => {
+  //   dispatch(deleteContactThunk(id));
+  // };
 
   const visibleContacts = getVisibleContacts(contacts, filter);
 
